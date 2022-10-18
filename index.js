@@ -23,9 +23,9 @@ Do the following:
 const votingAge =18;
 
 if (votingAge >= 18) {
-  console.log('task 1 a:', true);
+  console.log('task 1a:', true);
 } else {
-  console.log('task 1 a:',false);
+  console.log('task 1a:',false);
 }
 
 /*
@@ -49,7 +49,7 @@ if (behavior === 'bad') {
   dog = 'good dog';
 }
 
-console.log('task 1 b:',dog);
+console.log('task 1b:',dog);
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
 
@@ -61,7 +61,7 @@ Do the following:
    HINT: look up the Number method
 */
 const party = '1999';
-console.log('task 1 c:', Number(party));
+console.log('task 1c:', Number(party));
 
 
 /*
@@ -77,7 +77,7 @@ function multiply(a, b){
   return a * b;
 }
 
-console.log('task 1 d:', multiply(2, 4));
+console.log('task 1d:', multiply(2, 4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -277,11 +277,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(gradeNum){
+if (gradeNum >= 90) {
+  return `you got an A`;
+}else if (gradeNum < 90 && gradeNum >= 80) {
+  return `you got a B`;
+}else if (gradeNum < 80 && gradeNum >= 70) {
+  return `you got a C`;
+}else if (gradeNum < 70 && gradeNum >= 60) {
+  return `you got a D`;
+}else if (gradeNum < 60) {
+  return `you got an F`;
+}
 }
 
-
+console.log('task 7:', grade(85));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
